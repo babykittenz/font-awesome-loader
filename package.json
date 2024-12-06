@@ -1,0 +1,15 @@
+{
+  "name": "font-awesome-loader",
+  "version": "1.0.0",
+  "description": "A WordPress plugin to load Font Awesome Pro icons.",
+  "main": "font-awesome-loader.php",
+  "scripts": {
+    "build": "npm run fa-icons",
+    "fa-icons": "mkdir -p inc/fa-icons && cp -R node_modules/@fortawesome/fontawesome-pro/svgs/* inc/fa-icons/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^6.7.1"
+  }
+}
